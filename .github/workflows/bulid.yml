@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v3
     - name: Build Image
       run: |
-        echo "${{ secrets.DOCKERPW }}" | docker login -u "sabirlkhaloufi" --password-stdin
+        cat "${{ secrets.DOCKERPW }}" | docker login -u "sabirlkhaloufi" --password-stdin
         docker image build . -t sabirlkhaloufi/test:latest
     - name: push image
       run: docker push sabirlkhaloufi/test:latest
