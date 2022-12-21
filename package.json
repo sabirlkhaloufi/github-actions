@@ -1,0 +1,22 @@
+{
+  "name": "github-actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabirlkhaloufi/github-actions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sabirlkhaloufi/github-actions/issues"
+  },
+  "homepage": "https://github.com/sabirlkhaloufi/github-actions#readme",
+  "dependencies": {
+    "jest": "^29.3.1"
+  }
+}
