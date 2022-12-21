@@ -1,4 +1,4 @@
-name: ci
+name: bild image
 
 on:
   push:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -
-        name: Set up QEMU
+        name: Set up
         uses: docker/setup-qemu-action@v2
       -
         name: Set up Docker Buildx
