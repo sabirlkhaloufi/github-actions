@@ -13,8 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Build & Push Image
+    - name: Build Image
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "sabirlkhaloufi" --password-stdin
         docker image build . -t sabirlkhaloufi/test:latest
-        docker push sabirlkhaloufi/test:latest
+    - name: push image
+      run: docker push sabirlkhaloufi/test:latest
