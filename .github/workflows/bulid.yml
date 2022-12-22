@@ -18,3 +18,4 @@ jobs:
         echo "${{ secrets.DOCKERPW }}" | docker login -u "sabirlkhaloufi" --password-stdin
         docker image build . -t sabirlkhaloufi/test:latest
         docker push sabirlkhaloufi/test:latest
+  

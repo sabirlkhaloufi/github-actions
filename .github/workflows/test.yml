@@ -13,10 +13,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
 
-      - name: install test
+      - name: install jest
         run: npm i jest
+
       - name: run test
         run: npm test
 
